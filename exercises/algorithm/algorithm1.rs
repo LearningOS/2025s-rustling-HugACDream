@@ -69,9 +69,10 @@ impl<T> LinkedList<T> {
             },
         }
     }
-	pub fn merge(list_a:LinkedList<T>,list_b:LinkedList<T>) -> Self
+	pub fn merge(mut list_a:LinkedList<T>, mut list_b:LinkedList<T>) -> Self
+    where T: Ord,
 	{
-		//TODO
+		
 		Self {
             length: 0,
             start: None,
